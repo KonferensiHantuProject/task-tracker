@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button @btn-click="this.$emit('toggle-add-task')" :text="showAddTask ? 'Tutup' : 'Tambah Task'" :color="showAddTask ? 'red' : 'green' " />
+    <Button v-show="homePage" @btn-click="this.$emit('toggle-add-task')" :text="showAddTask ? 'Tutup' : 'Tambah Task'" :color="showAddTask ? 'red' : 'green' " />
   </header>
 </template>
 
@@ -16,6 +16,15 @@ export default {
     props: {
         title: String,
         showAddTask: Boolean,
+    },
+    computed: {
+        homePage() {
+            if(this.$route.path === '/'){
+                return true
+            }else{
+                return false
+            }
+        }
     }
 }
 </script>
