@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button @click="onClick()" text="Tambah Task" color="green" />
+    <Button @btn-click="this.$emit('toggle-add-task')" :text="showAddTask ? 'Tutup' : 'Tambah Task'" :color="showAddTask ? 'red' : 'green' " />
   </header>
 </template>
 
@@ -15,11 +15,7 @@ export default {
     },
     props: {
         title: String,
-    },
-    methods:{
-        onClick(){
-            console.log('klik')
-        }
+        showAddTask: Boolean,
     }
 }
 </script>
