@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Dokter Main",
+      "day": "1 Maret jam 2.30",
+      "reminder": true
+    },
+    {
+      "id": "2",
+      "text": "Ke sekolah",
+      "day": "3 Maret jam 01.30",
+      "reminder": true
+    },
+    {
+      "id": "3",
+      "text": "Belanja Makanan",
+      "day": "3 Maret jam 11:00",
+      "reminder": false
+    }
+  ]
+}
