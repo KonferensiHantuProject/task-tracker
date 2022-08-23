@@ -1,6 +1,6 @@
 # Task Tracker
 
-## Project setup
+## Steup Projek
 ```
 npm install
 ```
