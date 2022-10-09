@@ -1,5 +1,5 @@
 # Task Tracker
-A simple task tracker
+simple task tracker
 
 ## Project Setup
 ```
